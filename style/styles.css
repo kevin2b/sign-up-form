@@ -1,0 +1,49 @@
+html,
+:root{
+  --sidebar-min-height: 400px;
+  --sidebar-min-width: 200px;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  width: max(var(--sidebar-min-width), 25vw);
+  height: max(var(--sidebar-min-height), 100vh);
+  display: flex;
+  flex:0 0 auto;
+  position: relative;
+}
+
+.sidebar-image {
+  min-height: 0;
+  min-width: 0;
+  flex: 1;	
+}
+
+.logo-container{
+  position: absolute;
+  background-color:black;
+  height: calc(var(--sidebar-min-height)/4);
+  width: 100%;
+  opacity: 0.9;
+  top: calc(max(var(--sidebar-min-height), 100vh)/4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image{
+  height: calc(var(--sidebar-min-height)/4);
+  width: auto;
+}
+
+.logo-text{
+  font-family: Skranji;
+  font-size: 32px;
+  color: white;
+}
+.container{
+  
+}
