@@ -2,15 +2,19 @@ html,
 :root{
   --sidebar-min-height: 400px;
   --sidebar-min-width: 200px;
+  --right-sidebar-min-width: 400px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
 body {
   display: flex;
+  min-height: 100vh;
 }
 
 .sidebar {
-  width: max(var(--sidebar-min-width), 25vw);
-  height: max(var(--sidebar-min-height), 100vh);
+  width: max(var(--sidebar-min-width), 30vw);
+  height: auto;
   display: flex;
   flex:0 0 auto;
   position: relative;
@@ -19,15 +23,14 @@ body {
 .sidebar-image {
   min-height: 0;
   min-width: 0;
-  flex: 1;	
+  flex: 1;
 }
 
 .logo-container{
   position: absolute;
-  background-color:black;
+  background-color: rgba(0,0,0,60%);
   height: calc(var(--sidebar-min-height)/4);
   width: 100%;
-  opacity: 0.9;
   top: calc(max(var(--sidebar-min-height), 100vh)/4);
   display: flex;
   justify-content: center;
@@ -44,6 +47,58 @@ body {
   font-size: 32px;
   color: white;
 }
+
 .container{
-  
+  background-color: #F0F0F0;
+  width: max(var(--right-sidebar-min-width), 70vw);
+  flex:0 0 auto;
 }
+
+p {
+  margin: 0;
+}
+
+.container-header{
+  padding: 40px 20% 40px 20px;
+}
+
+.container-header,
+.form-header{
+  font-weight: 700;
+}
+
+.form-input-container{
+  background-color: white;
+}
+
+.form-header,
+.container-footer,
+form > button{
+  margin: 10px 20% 10px 20px;
+}
+
+form > button{
+  border-radius: 5px;
+  border: 0;
+  background-color: #596D48;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+}
+
+.container-footer{
+  font-size: 0.8rem;
+}
+
+a{
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+button,
+.form-input-container{
+  box-shadow: 1px 1px 3px gray;
+}
+
+
