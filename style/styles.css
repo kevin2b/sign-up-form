@@ -77,6 +77,10 @@ form > button{
   margin: 10px 20% 10px 20px;
 }
 
+.form-header{
+  padding-top: 10px;
+}
+
 form > button{
   border-radius: 5px;
   border: 0;
@@ -100,5 +104,48 @@ button,
 .form-input-container{
   box-shadow: 1px 1px 3px gray;
 }
+
+.form-group{
+  display: flex;
+}
+
+.left-form-group,
+.right-form-group{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.form-pair + .form-pair{
+  margin-top: 10px;
+}
+
+label{
+  display: block;
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+input{
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+input:focus{
+  border: 2px solid blue;
+  outline: none;
+}
+
+input:invalid:focus{
+  border: 2px solid red;
+  outline: none;
+}
+
+
+
 
 
