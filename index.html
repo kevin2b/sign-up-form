@@ -23,7 +23,7 @@
         This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
         Sign up <i>now</i> to get started. <br> <br> You <i>know</i> you want to.
       </p>
-      <form action="./index.html" method="post">
+      <form id="main-form" action="./index.html" method="post">
         <div class="form-input-container">
           <p class="form-header">
             Let's do this!
@@ -41,6 +41,7 @@
               <div class="form-pair">
                 <label for="password"> PASSWORD * </label>
                 <input type="password" id="password" name="password" minlength="6" required>
+				<div class="error-message"> </div>
               </div>
             </div>
             <div class="right-form-group">
